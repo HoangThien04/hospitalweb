@@ -1,0 +1,199 @@
+.login-background {
+    background: #008DDA;
+    /* Màu gradient từ hình ảnh gốc */
+    background: linear-gradient(90deg, #41C9E2 0%, #008DDA 100%);
+    /* Gradient nâng cao */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+
+    .login-container {
+        width: 420px;
+        /* Hoặc theo kích thước cụ thể từ mẫu */
+        // background-color: #b5179e;
+        // border-radius: 10px;
+        /* Màu nền từ mẫu */
+        // border-radius: 10px;
+        // box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        // padding: 2rem;
+        // display: flex;
+        // flex-direction: column;
+        // align-items: center;
+
+        .login-content {
+            width: 420px;
+            /* Hoặc theo kích thước cụ thể từ mẫu */
+            background: transparent;
+            border: 2px solid rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(20px);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            color: #fff;
+            border-radius: 10px;
+            padding: 30px 40px;
+
+            .text-login {
+                font-size: 36px;
+                text-align: center;
+                color: #ffffff;
+                // margin-bottom: 1.5rem;
+            }
+
+            .login-input {
+                position: relative;
+                width: 100%;
+                height: 50px;
+                margin: 30px 0;
+
+                label {
+                    display: none;
+                    /* Ẩn label vì mẫu không hiển thị chúng */
+                }
+
+                input {
+                    width: 100%;
+                    height: 100%;
+                    background: transparent;
+                    border: none;
+                    outline: none;
+                    border: 2px solid rgba(255, 255, 255, 0.2);
+                    border-radius: 40px;
+                    font-size: 16px;
+                    color: #fff;
+                    padding: 20px 45px 20px 20px;
+
+                    &::placeholder {
+                        /* Pseudo-element cho placeholder */
+                        color: #fff;
+                        /* Đặt màu của placeholder là màu trắng */
+                        opacity: 1;
+                        /* Đảm bảo rằng placeholder không bị mờ đi */
+                    }
+
+
+                }
+
+                i {
+                    position: absolute;
+                    right: 20px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    font-size: 20px;
+                }
+            }
+
+            .remember-forgot {
+                display: flex;
+                justify-content: space-between;
+                font-size: 14.5px;
+                margin: -15px 0 15px;
+
+                label {
+                    color: #ffffff;
+                    /* Màu chữ từ mẫu */
+                    margin-right: 3px;
+                }
+
+                a {
+                    color: #f8f9fa;
+                    /* Màu liên kết từ mẫu */
+                    font-size: 0.8rem;
+                    text-decoration: none;
+
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+
+            .button-login {
+                width: 100%;
+                height: 45px;
+                background: #fff;
+                border: none;
+                outline: none;
+                border-radius: 40px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                cursor: pointer;
+                font-size: 16px;
+                color: #333;
+                font-weight: 600;
+
+                &:hover {
+                    background-color: darken(rgb(172, 226, 225), 10%);
+                }
+            }
+
+            // a {
+            //     color: #f8f9fa;
+            //     /* Màu liên kết từ mẫu */
+            //     font-size: 0.8rem;
+            //     text-decoration: none;
+
+            //     &:hover {
+            //         text-decoration: underline;
+            //     }
+            // }
+
+
+            .login-register {
+                font-size: 14.5px;
+                text-align: center;
+                margin-top: 20px;
+
+                a {
+                    color: #fff;
+                    font-weight: 600;
+                    text-decoration: none;
+
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+
+            .social {
+                margin-top: 30px;
+                display: flex;
+                justify-content: center; // Đảm bảo các nút được căn giữa trên màn hình
+                gap: 20px; // Tạo khoảng cách đồng đều giữa các nút
+
+                div {
+                    background: red;
+                    width: 150px;
+                    height: 40px; // Đảm bảo cả hai nút có cùng chiều cao
+                    border-radius: 3px; // Làm tròn góc
+                    padding: 5px 10px 10px 5px; // Đồng bộ hóa padding
+                    color: #FFFFFF; // Màu chữ trắng
+                    font-weight: bold; // Chữ đậm
+                    display: flex;
+                    align-items: center; // Căn giữa nội dung theo chiều dọc
+                    justify-content: center; // Căn giữa nội dung theo chiều ngang
+                    text-align: center;
+                    background-color: rgba(255, 255, 255, 0.27);
+                    cursor: pointer; // Con trỏ chuột khi hover
+
+                    &:hover {
+                        background-color: rgba(255, 255, 255, 0.47);
+                    }
+                }
+
+                // .google {
+                //     // background-color: #DB4437; // Màu đặc trưng của Google
+                //     // background-color: rgba(255, 255, 255, 0.47);
+                // }
+
+                .facebook {
+                    // background-color: #4267B2; // Màu đặc trưng của Facebook
+                    // background-color: rgba(255, 255, 255, 0.47);
+                    margin-left: 25px;
+                }
+
+                i {
+                    margin-right: 4px;
+                }
+            }
+
+        }
+    }
+}

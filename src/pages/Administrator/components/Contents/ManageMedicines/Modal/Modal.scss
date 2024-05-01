@@ -1,0 +1,149 @@
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6); 
+  z-index: 999; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-content {
+  background: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(255, 255, 255, 0);
+  position: relative;
+  z-index: 1000;
+  max-width: 500px; 
+  width: 90%; 
+  text-align: left;
+
+  &.add-medicine-modal {
+  .close-button {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    border: none;
+    background: none;
+    font-size: 1.5em;
+    cursor: pointer;
+  }
+  
+  .medicine-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    label {
+      font-weight: bold;
+      color: #333;
+    }
+
+    input[type="text"],
+    input[type="number"],
+    input[type="date"] {
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      margin-bottom: 10px; 
+    }
+
+    .submit-button {
+      background-color: #0056b3;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      padding: 10px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+
+      &:hover {
+        background-color: #003b82;
+      }
+    }
+  }
+}
+
+&.delete-amount-modal {
+  .medicine-form {
+    display: flex;
+    flex-direction: column;
+
+    .modal-title {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+      color: #000000;
+    }
+
+    .input-field {
+      font-size: 1rem;
+      padding: 0.5rem;
+      margin-bottom: 1rem;
+      border: 1px solid #ced4da;
+      border-radius: 0.25rem;
+
+      &:focus {
+        border-color: #80bdff;
+        outline: none;
+        box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+      }
+    }
+
+    .modal-actions {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 1rem;
+
+      .cancel-button, .submit-button {
+        padding: 0.5rem 1rem;
+        border-radius: 0.25rem;
+        border: 1px solid transparent;
+        font-size: 1rem;
+        line-height: 1.5;
+        cursor: pointer;
+        text-align: center;
+        vertical-align: middle;
+        user-select: none;
+
+        &:not(:disabled):not(.disabled) {
+          cursor: pointer;
+        }
+
+        &:focus {
+          outline: none;
+          box-shadow: none;
+        }
+      }
+
+      .cancel-button {
+        color: #6c757d;
+        background-color: #fff;
+        border-color: #6c757d;
+
+        &:hover {
+          color: #fff;
+          background-color: #6c757d;
+          border-color: #6c757d;
+        }
+      }
+
+      .submit-button {
+        color: #fff;
+        background-color: #dc3545;
+        border-color: #dc3545;
+
+        &:hover {
+          color: #fff;
+          background-color: #c82333;
+          border-color: #bd2130;
+        }
+      }
+    }
+  }
+}
+}

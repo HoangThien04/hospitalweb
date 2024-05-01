@@ -1,0 +1,203 @@
+.manangerDevice {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5px;
+  background-color: whitesmoke;
+  /* Màu nền nhẹ nhàng cho toàn bộ trang */
+}
+
+.manangerDevice h1 {
+  color: #333;
+  /* Màu chữ đậm */
+  margin-top: 20px;
+
+  margin-bottom: 10px;
+  /* Khoảng cách giữa tiêu đề và nội dung bên dưới */
+}
+
+.manangerDevice input[type="text"],
+.manangerDevice input[type="date"],
+.manangerDevice button {
+  padding: 10px;
+  margin: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  /* Viền nhẹ */
+  outline: none;
+  /* Gỡ bỏ outline khi focus */
+}
+
+.manangerDevice input[type="text"] {
+  width: 300px;
+  /* Đặt chiều rộng cho trường nhập liệu */
+}
+
+.manangerDevice button {
+  background-color: #007bff;
+  /* Nền xanh dương cho nút */
+  color: white;
+  /* Màu chữ trắng */
+  cursor: pointer;
+  /* Biểu tượng con trỏ khi di chuyển chuột vào */
+  border: none;
+  /* Gỡ bỏ viền */
+}
+
+.manangerDevice button:hover {
+  background-color: #0056b3;
+  /* Màu khi hover */
+}
+
+.manangerDevice .device-form {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  /* Bóng đổ nhẹ */
+  border-radius: 8px;
+  /* Bo góc */
+  width: 350px;
+  margin-bottom: 20px;
+}
+
+.manangerDevice .device-form input {
+  margin-bottom: 10px;
+  /* Khoảng cách giữa các trường nhập liệu */
+  border-radius: 5px;
+  height: 45px;
+  padding-left: 10px;
+  width: 100%;
+}
+
+.device-form input,
+.device-form input[type="date"] {
+  box-sizing: border-box;
+  /* Đặt kiểu dáng cho input type date */
+  appearance: none;
+  /* Ẩn kiểu mặc định */
+  margin-left: 0px;
+  padding: 10px;
+  width: 100%;
+  background-position: right center;
+  /* Vị trí hình nền */
+}
+
+.device-form button {
+  margin-bottom: 15px;
+  /* Khoảng cách giữa các input và button */
+  padding: 10px;
+  /* Đặt độ dày nội dung bên trong input và button */
+  border: 1px solid #ccc;
+  /* Đặt viền cho input và button */
+  border-radius: 5px;
+  /* Bo tròn góc cho input và button */
+  font-size: 16px;
+  /* Đặt kích thước chữ cho input và button */
+}
+
+.device-form button[type="submit"] {
+  background-color: #007bff;
+  /* Màu nền của button */
+  color: white;
+  /* Màu chữ của button */
+  border: none;
+  /* Loại bỏ viền */
+  border-radius: 5px;
+  /* Bo tròn góc */
+  cursor: pointer;
+  /* Đổi con trỏ chuột thành pointer khi di chuột qua */
+  transition: background-color 0.3s;
+  /* Hiệu ứng màu nền */
+}
+
+.device-form button[type="submit"]:hover {
+  background-color: #0056b3;
+  /* Màu nền hover */
+}
+
+.device-list {
+  width: 80%;
+  margin-top: 20px;
+}
+
+.device-item {
+  background-color: #ffffff;
+  padding: 15px;
+  margin-bottom: 25px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.device-details {
+  flex-grow: 1;
+  align-self: stretch;
+  /* Stretch phần tử này */
+}
+
+.button-device {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-self: stretch;
+  /* Stretch phần tử này */
+  align-items: center;
+  /* Canh chỉnh nút theo trục dọc */
+}
+
+.button-device button {
+  margin-top: 90px;
+  padding: 10px 15px;
+  background-color: #007bff;
+  color: white;
+  border: none; 
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.button-device button:hover {
+  background-color: #0056b3;
+}
+
+.device-details h2 {
+  margin: 0 0 10px 0;
+  /* Cách ly tiêu đề khỏi thông tin khác */
+}
+
+.device-details p {
+  margin: 5px 0;
+  color: red;
+  /* Cách ly các thông tin */
+}
+
+.manangerDevice .close {
+  position: absolute;
+  top: 20px;
+  right: 20px;  
+  color: #aaa;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.manangerDevice .close:hover,
+.manangerDevice .close:focus {
+  color: black;
+  text-decoration: none;
+}
+
+.manangerDevice .modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

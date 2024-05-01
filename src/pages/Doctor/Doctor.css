@@ -1,0 +1,403 @@
+/* styles.css */
+body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    
+.appointment .list .patientName:hover{
+      cursor: pointer;
+      color: blue;
+}
+  .doctor .header {
+    background-color: #007bff;
+    display: flex;
+    justify-content: space-around;
+    height: 120px;
+    width: 100%;
+  }
+  
+  
+  .doctor .back-link {
+    line-height: 120px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 20;
+    color: white;
+    
+  }
+  
+  .doctor h3 {
+    text-align: center;
+    font-size: 30px;
+  }
+  
+  /* .nav-link {
+    color: white;
+    font: none;
+    padding-left: 80px;
+    margin-top: 3%;
+  } */
+  
+  .doctor .back-link a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+  }
+  
+  .doctor .back-link a:hover {
+    text-decoration: underline;
+  }
+  
+  .doctor .header-home {
+    background-color: #007bff;
+    color: #ffffff;
+    text-align: center;
+    padding: 2.35%;
+  }
+  
+  .doctor .containerd {
+    background-size: 100%;
+    background-color: whitesmoke;
+  }
+  
+  .doctor h1 {
+    text-align: center;
+  }
+  
+  .doctor h2 {
+    color: #0562c7;
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 10px;;
+  }
+  
+  .profile_doctor{
+    margin-left: 10rem;
+    margin-right: 10rem;
+  }
+
+  .doctor .profile_doctor, .doctor .appointment-form, .doctor .appointment-list {
+    background-color: #ffffff;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-size: 100%;
+    height: 600px;
+    overflow-y: auto;
+  }
+  
+  .doctor .appointment-submit {
+      padding: 20px;
+      margin-left: 0px;
+  }  
+    
+  .doctor .button {
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: 10%;
+  }
+  
+  .doctor .button:hover {
+    background-color: #0056b3;
+  }
+  
+  .doctor ul {
+    list-style-type: none;
+    padding: 0;
+    color: black;
+  }
+  
+  .doctor nav ul {
+    list-style-type: none;
+    margin-top: 5%;
+    padding: 0;
+    
+  }
+  
+  .doctor .menu {
+    text-align: center;
+    margin-bottom: 3%;
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+          /* PROFILE */
+  
+          .doctor .modal {
+    /* display: ${showEditForm ? 'block' : 'none'}; */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 999;
+     width: 70%;  /* Điều chỉnh chiều rộng của form */
+    max-width: 700px; /* Giới hạn chiều rộng tối đa */
+    height: 85%; /* Điều chỉnh chiều cao của form */
+    max-height: 700px; /* Giới hạn chiều cao tối đa */
+    overflow-y: auto; /* Hiển thị thanh cuộn nếu nội dung quá dài */
+  }
+  .doctor .modal-content {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .doctor .device-form {
+    margin: 10%;
+    width: 100%; /* Đảm bảo form rộng bằng pop-up */
+    max-width: 700px; /* Giới hạn chiều rộng tối đa của form */
+  }
+  .doctor .form-group {
+    margin-bottom: 15px;
+  }
+  .doctor .modal label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .doctor .modal input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+
+  .doctor .modal select {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+  
+  
+  .doctor .modal button {
+    width: 100%;
+    padding: 10px;
+    background-color: #008DDA ;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .doctor .modal button:hover {
+    background-color: #41C9E2;
+  }
+  
+  .doctor .close {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+  
+  
+  
+  
+  .doctor .profile_doctor p {
+    margin: 5px 0;
+  }
+  .doctor .profile_doctor strong {
+    font-weight: bold;
+    margin-right: 5px;
+  }
+  .doctor .BS {
+    text-align: center;
+    font-size : 40px;
+    color: #3a3a3a;
+  }
+  .doctor .information {
+    margin-left: 10%;
+    font-size: 30px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+  }
+  .doctor .infor {
+    margin-left: 50px;
+  }
+  
+          /* END */
+  
+  
+  
+  
+  
+  
+  
+      /* APPOINTMENT-LIST */
+      .doctor .calendar {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 10px;
+  }
+  .doctor .appointment-item {
+    border: 3px solid #cccccc;
+    padding: 10px;
+    border-radius: 10px;
+    height: 170px;
+    max-height: 170px;
+    text-align: center;
+    overflow-y: auto;
+  } 
+  .doctor .date {
+    font-weight: bold;
+  }
+  .doctor .time {
+    color: black;
+  }
+  
+          /* END */
+  
+  
+  
+  
+  
+  
+          /* Book an appointment: */
+  
+  .doctor .appointment-form {
+    margin-left: 10rem;
+    margin-right: 10rem;
+  }
+
+  .doctor .appoi-form {
+    margin-left: 10%;
+    font-size: 30px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+  }
+  .doctor .form {
+    margin-top: 5px;
+    color: rgb(41, 41, 41);
+  }
+  .doctor .form-ingr {
+    margin-left: 50px;
+  }
+  .doctor .patient-name, .doctor .appointment-date, .doctor .appointment-time, .doctor .patient-mail {
+    margin-top: 0px;
+    /* padding: 6px 0px; */
+    font-size: 20px;
+  }
+          /* END */
+  
+  
+  
+          
+  
+  
+          /* UPDATE-PATIENT */
+  .doctor .uppatient-name, .doctor .start-day, .doctor .diagnosis, .doctor .health, .doctor .treatments,.doctor .patient-mail {
+    font-size: 20px;
+    border: 2px solid #505050;
+  }
+  .doctor input{
+    border-radius: 10px;
+  }
+  
+        /* END  */
+  
+  
+        /* MEDICINE */
+  .doctor .medicine-name,.doctor  .quantity {
+    font-size: 20px;
+    border: 2px solid #616060;
+  }
+        /* END */
+  
+  
+  
+  
+        /*My Patient */
+  
+  
+        .doctor .flex-container {
+          display: flex;
+          width: 100%;
+        }
+        
+        .doctor .left-column {
+          flex: 1;
+          padding-right: 10px;
+          height: 100%;
+        }
+        
+        .doctor .right-column {
+          flex: 1;
+          padding-left: 10px;
+        }
+  
+        .doctor .list-patient {
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          gap: 10px;
+        }
+        .doctor .list-item {
+          border: 3px solid #cccccc;
+          padding: 10px;
+          border-radius: 10px;
+          height: 100px;
+          max-height: 100px;
+          text-align: center;
+          overflow-y: auto;
+        } 
+  
+        .doctor .patient-detail {
+          background-color: #ffffff;
+          padding: 10px;
+          margin-bottom: 20px;
+          border-radius: 10px;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+          background-size: 100%;
+          height: 600px;
+          overflow-y: auto;
+          font-size: 20px;
+        }
+  
+        .doctor .stt {
+          margin-left: 10%;
+        }
+  
+        .doctor .informationp {
+          margin-left: 10%;
+          font-size: 20px;
+          position: relative;
+          display: flex;
+          flex-direction: row;
+        }
+        .doctor .inforp {
+          margin-left: 50px;
+        }
+  
+  
+        /* END */

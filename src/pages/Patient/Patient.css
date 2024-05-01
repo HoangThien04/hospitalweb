@@ -1,0 +1,233 @@
+.user{
+  overflow: hidden;
+  margin-left: 10rem;
+  cursor: pointer;
+}
+
+.user-icon{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: block;  
+}
+
+.dropdown{
+  color: black;
+  background-color: aliceblue;
+  display: none;
+  position: absolute;
+  min-width: 100px;
+  z-index: 1;
+}
+
+.dropdown p{
+  padding: 12px;
+  text-decoration: none;
+  display: block;
+}
+
+.user:hover .dropdown{
+  display: block;
+}
+
+.user:hover .dropdown p:hover{
+  background-color: #8997dd;
+  cursor: pointer;
+}
+
+/* .form{
+  margin: auto;
+} */
+.form button{
+  margin: 1rem;
+  padding: 10px;
+  background-color: #69b4f5;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.form button:hover{
+  background-color: #4d9fe2;
+}
+
+.form .new-appointment{
+  margin: 2rem;
+  margin-right: 5rem;
+  float: right;
+}
+
+.form .form-wrapper{
+  position: relative;  
+  display: none;
+}
+
+.form .form-appointment{
+  position: absolute;
+  top: 20rem; bottom: 0; left: 0; right: 0;
+  height: 29rem;
+  width: 25rem;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(255, 255, 255);
+  text-align: center;
+  border: 1px solid #686666; /* Add width and style */  
+  border-radius: 20px;
+  justify-content: space-between; /* Add this line */
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.7); /* Add this line */
+}
+
+.form .form-appointment .cancel{
+  width: 20px;
+  height: 20px;
+  margin: 15px;
+  margin-right: 20px; /* Adjust this value as needed */
+  align-self: flex-end; /* Add this line */
+  cursor: pointer;
+}
+
+.form .form-appointment h2{
+  margin: 1rem;
+}
+
+.form .form-appointment input{
+  margin: 1rem;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.form .form-appointment button{
+  margin-top: 3rem;
+}
+
+.list {
+  font-family: 'Arial', sans-serif;
+  margin: 20px;
+  border-collapse: collapse;
+  
+}
+
+.list table {
+  width: 100%;
+  border: none;
+}
+
+.list th {
+  background-color: #69b4f5;
+  color: white;
+  padding: 10px;
+}
+
+.list td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.list tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.list tr:hover {
+  background-color: #ddd;
+}
+
+.list button {
+  color: white;
+  background-color: #f44336;
+  border: none;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.list button:hover {
+  background-color: #d32f2f;
+}
+
+.list button:disabled {
+  background-color: #d89898;
+  cursor: not-allowed;
+}
+
+.list th, .list td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+  border: none;
+  
+}
+
+.list th.reason, .list td.reason {
+  width: 40%; /* Adjust the width as needed */
+}
+
+.list td.status {
+  color: orange; /* Adjust the width as needed */
+}
+
+/* Rest of your CSS */
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.columnl{
+  width: 50%;
+  float:left;
+}
+.columnr{
+  width: 50%;
+  float: right;
+}
+.leftcolumn {
+  float: left;
+  width: 40%;
+}
+.rightcolumn {
+  float: right;
+  width: 60%;
+  padding-left: 20px;
+}
+.card {
+  background-color: #cde5fc;
+  padding: 20px 25px;
+  margin-top: 10px;
+
+}
+.card img {
+  height:fit-content;
+  width: fit-content;
+}
+.card button{
+  background-color: rgb(0, 141, 218);
+  color: #ffffff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  transition: background-color 0.3s;
+
+  &:hover{
+      background-color: rgb(65, 201, 226);
+  }
+  &:active{
+      background-color: rgb(172, 226, 225);
+  }
+}
+.updatepatient input {
+  border: 2px solid ;
+  border-radius: 4px;
+  height: 30px;
+  width: 250px;
+}

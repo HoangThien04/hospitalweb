@@ -1,37 +1,149 @@
-.managerDoctor table {
-    margin: auto; /* Thêm dòng này để căn giữa table */
+/* Styles for the body */
+.body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    color: #333;
+    padding-top: 50px; /* Đảm bảo không bị che bởi navbar */
+    padding-bottom: 80px; /* Đảm bảo không bị che bởi footer */
+}
+
+/* Styles for the navbar */
+.AdminNavbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+/* Styles for the main content */
+.ContainerAdminDoctor {
+    margin-top: 50px; /* Đảm bảo không bị che bởi navbar */
+    margin-bottom: 80px; /* Đảm bảo không bị che bởi footer */
+    text-align: center;
+}
+
+/* Styles for buttons */
+.ContainerAdminDoctor button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.ContainerAdminDoctor button:hover {
+    background-color: #45a049;
+}
+
+/* Styles for tables */
+.ContainerAdminDoctor table {
     border-collapse: collapse;
     width: 100%;
+    margin-bottom: 10px;
 }
 
-.managerDoctor th, td {
+.Showinfor th, .Showinfor td {
     padding: 8px;
-    border: 1px solid #ddd;
     text-align: left;
-    color: black;
+    border: 1px solid #ccc;
+    border-bottom: 1px solid #ddd;
 }
 
-.managerDoctor th {
-    background-color: #3498db;
-    color: white;
+.Showinfor tbody tr:hover {
+    background-color: #f5f5f5;
 }
 
-.managerDoctor {
+.Showinfor th:hover {
+    background-color: transparent;
+}
+
+/* Styles for search input */
+/* Styles for search container */
+.Searching {
+    display: flex;
+    justify-content: center; /* Căn giữa theo chiều ngang */
+    align-items: center; /* Căn giữa theo chiều dọc */
+}
+
+/* Styles for search input */
+.Searching input[type="text"] {
     padding: 10px;
-    background-color: white;
+    margin: 5px 0;
+    width: 30%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
 }
 
-.managerDoctor #newDoctor {
-    background-color: #3498db;
+/* Styles for search dropdown */
+.Searching select {
+    padding: 10px;
+    width: 10%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin: 10px;
+}
+
+/* Styles for statistics */
+.Statistics {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #f5f5f5;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.Statistics-heading {
+    text-align: center;
+    margin-bottom: 10px;
+    color: #0066cc;
+}
+
+.Statistics select {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 20%;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.Statistics button {
+    padding: 8px 20px;
+    background-color: #4CAF50;
     color: white;
-    text-decoration: none;
-    font-size: 16px;
-    padding: 10px 15px;
-    border-radius: 6px;
+    border: 1px solid #4CAF50;
+    border-radius: 4px;
+    cursor: pointer;
 }
 
-.managerDoctor #newDoctor:hover {
-    background-color: #2ecc71; 
-    color: white; 
+.Statistics button:hover {
+    background-color: #45a049;
 }
-  
+
+.Statistics p {
+    margin: 10px 10px;
+    font-weight: bold;
+}
+
+/* Styles for footer */
+.Footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
